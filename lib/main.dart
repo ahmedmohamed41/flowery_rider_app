@@ -1,5 +1,6 @@
 import 'package:flowery_rider_app/config/di/di.dart';
 import 'package:flowery_rider_app/core/router/app_router.dart';
+import 'package:flowery_rider_app/core/router/router_paths.dart';
 import 'package:flowery_rider_app/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,10 @@ class FloweryRiderApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: AppRouter.getRouter(),
+      routerConfig: AppRouter.getRouter(
+        initialLocation: AppRouterPaths.kApplyView,
+      ),
+
       debugShowCheckedModeBanner: false,
       theme: AppTheme.appTheme,
     );

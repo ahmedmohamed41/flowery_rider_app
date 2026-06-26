@@ -26,6 +26,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Transaction-order (交易清单).svg
   String get transactionOrder => 'assets/icons/Transaction-order (交易清单).svg';
 
+  /// File path: assets/icons/Vector.svg
+  String get vector => 'assets/icons/Vector.svg';
+
   /// File path: assets/icons/add_icon.svg
   String get addIcon => 'assets/icons/add_icon.svg';
 
@@ -46,6 +49,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/chat_icon.svg
   String get chatIcon => 'assets/icons/chat_icon.svg';
+
+  /// File path: assets/icons/check-circle.svg
+  String get checkCircle => 'assets/icons/check-circle.svg';
 
   /// File path: assets/icons/check_circle_icon.svg
   String get checkCircleIcon => 'assets/icons/check_circle_icon.svg';
@@ -176,6 +182,7 @@ class $AssetsIconsGen {
     checklistIcon,
     logo,
     transactionOrder,
+    vector,
     addIcon,
     addressIcon,
     arrowBackIcon,
@@ -183,6 +190,7 @@ class $AssetsIconsGen {
     cancelIcon,
     categoryIcon,
     chatIcon,
+    checkCircle,
     checkCircleIcon,
     checkIcon,
     defaultMarkerComponentIcon,
@@ -226,10 +234,27 @@ class $AssetsIconsGen {
   ];
 }
 
+class $AssetsJsonGen {
+  const $AssetsJsonGen();
+
+  /// File path: assets/json/cities.json
+  String get cities => 'assets/json/cities.json';
+
+  /// File path: assets/json/country.json
+  String get country => 'assets/json/country.json';
+
+  /// File path: assets/json/states.json
+  String get states => 'assets/json/states.json';
+
+  /// List of all assets
+  List<String> get values => [cities, country, states];
+}
+
 class Assets {
   const Assets._();
 
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsJsonGen json = $AssetsJsonGen();
 }
 
 class AssetGenImage {
