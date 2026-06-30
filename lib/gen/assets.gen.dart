@@ -38,6 +38,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/arrow_back_icon.svg
   String get arrowBackIcon => 'assets/icons/arrow_back_icon.svg';
 
+  /// File path: assets/icons/arrow_forward.svg
+  String get arrowForward => 'assets/icons/arrow_forward.svg';
+
   /// File path: assets/icons/call_icon.svg
   String get callIcon => 'assets/icons/call_icon.svg';
 
@@ -128,6 +131,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/note_pen.svg
   String get notePen => 'assets/icons/note_pen.svg';
 
+  /// File path: assets/icons/notification.svg
+  String get notification => 'assets/icons/notification.svg';
+
   /// File path: assets/icons/payments_icon.svg
   String get paymentsIcon => 'assets/icons/payments_icon.svg';
 
@@ -186,6 +192,7 @@ class $AssetsIconsGen {
     addIcon,
     addressIcon,
     arrowBackIcon,
+    arrowForward,
     callIcon,
     cancelIcon,
     categoryIcon,
@@ -215,6 +222,7 @@ class $AssetsIconsGen {
     logoutIcon,
     motorcycleDeliveryIcon,
     notePen,
+    notification,
     paymentsIcon,
     personIcon,
     photoCameraIcon,

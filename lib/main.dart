@@ -18,7 +18,7 @@ class FloweryRiderApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: AppRouter.getRouter(
-        initialLocation: AppRouterPaths.kApplyView,
+        initialLocation: AppRouterPaths.kProfileView,
       ),
 
       debugShowCheckedModeBanner: false,
