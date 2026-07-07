@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flowery_rider_app/core/values/api_endpoints.dart';
+import 'package:flowery_rider_app/features/profile/my_profile/data/models/edit_profile_request_model.dart';
 import 'package:flowery_rider_app/features/profile/my_profile/data/models/response/profile_response_model.dart';
 import 'package:injectable/injectable.dart';
 import 'package:retrofit/retrofit.dart';
@@ -14,4 +15,8 @@ abstract class ProfileApiClient {
 
   @GET(ApiEndpoints.getLoggedDriverData)
   Future<ProfileResponseModel> getLoggedDriverData();
+  @PUT(ApiEndpoints.editProfile)
+  Future<ProfileResponseModel> editProfile(
+    @Body() EditProfileRequestModel request,
+  );
 }
